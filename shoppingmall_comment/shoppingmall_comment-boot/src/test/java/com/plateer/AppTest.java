@@ -1,4 +1,4 @@
-package org.shoppingmall_comment.boot;
+package com.plateer;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
