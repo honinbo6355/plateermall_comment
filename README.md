@@ -1,2 +1,2 @@
-#shoppingmall_comment
+# shoppingmall_comment
 ![class diagram](classdiagram.PNG)
