@@ -1,0 +1,310 @@
+683  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 12124 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+685  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+686  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1998 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+595  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 4452 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+598  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+598  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1698 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 1.445 seconds (JVM running for 2.395)
+1699 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+609  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 11084 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+611  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+612  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1649 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+615  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 11408 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+617  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+618  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1644 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+611  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 6500 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+613  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+614  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1873 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 1.619 seconds (JVM running for 2.453)
+1875 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+607  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 9376 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+610  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+610  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1608 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+601  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 6996 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+603  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+604  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1787 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 1.532 seconds (JVM running for 2.448)
+1789 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+619  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 7428 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+622  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+622  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1787 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+630  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 11568 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+633  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+633  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1821 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 1.57 seconds (JVM running for 2.404)
+1822 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+587  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 1664 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+589  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+589  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1590 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+587  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 11644 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+590  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+590  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1578 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+590  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 13044 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+592  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+593  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1592 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+606  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 6000 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+609  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+609  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1611 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+611  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 8800 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+613  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+614  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1589 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+590  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 10084 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+592  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+593  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1587 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+741  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 3996 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+744  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+745  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+1757 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in com.plateer.config.DB required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+612  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 13036 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+615  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+615  [main] INFO  c.p.ShoppingmallCommentBootApplication - No active profile set, falling back to default profiles: default
+3095 [main] ERROR com.plateer.config.DB - MariaDB Connector/J
+3409 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.14 seconds (JVM running for 4.1)
+3411 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
