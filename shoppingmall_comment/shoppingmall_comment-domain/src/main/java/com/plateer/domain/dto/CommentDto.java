@@ -19,6 +19,6 @@ public class CommentDto {
 	private String uuid;
 	private int averageStarPoint;
 	private int customerCount;
-	private SumEvaluationDto sumEvaluation;
-	private List<SubCommentDto> commentList;
+	private SumEvaluation sumEvaluation;
+	private List<SubComment> commentList;
 }

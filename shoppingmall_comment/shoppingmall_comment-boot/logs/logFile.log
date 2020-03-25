@@ -123,3 +123,8 @@ com.plateer.controller.CommentController#modifyComment(SubCommentDto) mapped.
 602  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
 3021 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.765 seconds (JVM running for 3.6)
 3023 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+868  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 20780 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+871  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+871  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3941 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.572 seconds (JVM running for 5.833)
+3943 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
