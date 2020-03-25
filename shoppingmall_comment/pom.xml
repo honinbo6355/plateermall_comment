@@ -12,5 +12,7 @@
   	<module>shoppingmall_comment-boot</module>
     <module>shoppingmall_comment-rest</module>
     <module>shoppingmall_comment-domain</module>
+    <module>shoppingmall_comment-service</module>
+    <module>shoppingmall_comment-mapper</module>
   </modules>
 </project>

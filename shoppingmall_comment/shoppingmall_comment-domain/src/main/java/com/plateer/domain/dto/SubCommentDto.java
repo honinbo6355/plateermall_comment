@@ -13,10 +13,10 @@ import lombok.ToString;
 @ToString
 public class SubCommentDto {
 
-	private String purchaseCode;
+	private String orderId;
 	private String goodsCode;
 	private String userId;
-	private String selectedOption;
+	private String selectedOptions;
 	private String myPhoto;
 	private int quantity;
 	private int recommendCount;

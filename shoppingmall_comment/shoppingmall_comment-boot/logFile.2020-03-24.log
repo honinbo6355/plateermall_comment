@@ -94,8 +94,21 @@ Identify and stop the process that's listening on port 9999 or configure this ap
 698  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
 3271 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.95 seconds (JVM running for 3.896)
 3272 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+<<<<<<< HEAD
 654  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 7816 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
 656  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
 659  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
 3113 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.867 seconds (JVM running for 3.758)
 3115 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+=======
+1274 [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 58820 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+1277 [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1278 [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+4168 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.91 seconds (JVM running for 5.752)
+4170 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+793  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 61720 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+796  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+796  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3515 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.178 seconds (JVM running for 5.178)
+3517 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+>>>>>>> 175d8b7283c99e7399abd9ac6f4b72aa3331e416
