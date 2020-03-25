@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.plateer.domain.dto.CommentDto;
 import com.plateer.domain.dto.SubCommentDto;
-import com.plateer.domain.dto.SumEvaluation;
+import com.plateer.domain.dto.SumEvaluationDto;
 
 @RestController
 @RequestMapping("/api/comments")
@@ -30,7 +30,7 @@ public class CommentController {
 	
 	@GetMapping("getcommentlist/{goodsCode}")
 	public CommentDto getComment(@PathVariable("goodsCode") String goodsCode){
-		SumEvaluation sumEvaluation = new SumEvaluation(60, 0, 0, 20, 50, 0, 20, 30, 40);
+		SumEvaluationDto sumEvaluation = new SumEvaluationDto(60, 0, 0, 20, 50, 0, 20, 30, 40);
 		List<SubCommentDto> commentList = new ArrayList<>();
 		
 		commentList.add(new SubCommentDto("1", goodsCode, "testId", "사이즈선택:235", "", 1, 30, 2, 2, 2, 5, "발 볼이 생각보다 좁아서 아프네요. 사이즈는 5mm정도 작게 나온 것 같아요.", "2020-03-24"));

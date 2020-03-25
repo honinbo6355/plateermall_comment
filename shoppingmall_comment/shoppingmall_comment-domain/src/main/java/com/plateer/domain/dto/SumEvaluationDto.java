@@ -11,7 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class SumEvaluation {
+public class SumEvaluationDto {
 
 	private int deliveryCommon;
 	private int deliveryBest;
