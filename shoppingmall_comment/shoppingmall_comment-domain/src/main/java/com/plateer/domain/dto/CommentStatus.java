@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class CommentStatusDto {
+public class CommentStatus {
 
 	private String orderId;
 	private String userId;

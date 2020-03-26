@@ -11,7 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class SubCommentDto {
+public class SubComment {
 
 	private String orderId;
 	private String goodsCode;
