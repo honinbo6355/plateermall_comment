@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.plateer.store.mapper.CommentStatusMapper">
+
+	<select id="retrieve" parameterType="String" resultType="String">
+		SELECT * FROM CommentStatus where userId = #{userId} and isWritten = 'N'
+	</select>
+	
+	<insert id="insert" parameterType="com.plateer.domain.CommentStatus">
+		INSERT INTO CommentStatus VALUES (#{orderId}, #{userId}, #{isWritten})
+	</insert>
+	
+	<update id="modify" parameterType="String">
+		UPDATE CommentStatus SET isWritten = 'Y' where orderId = #{orderId}
+	</update>
+	
+</mapper>

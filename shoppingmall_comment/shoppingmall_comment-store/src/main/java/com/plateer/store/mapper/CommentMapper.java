@@ -9,4 +9,5 @@ public interface CommentMapper {
 
 	CommentDto retrieve(String goodsCode);
 
+	void modify(CommentDto comment);
 }

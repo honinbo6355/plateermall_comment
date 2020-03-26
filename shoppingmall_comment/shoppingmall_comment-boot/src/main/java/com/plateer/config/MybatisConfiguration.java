@@ -29,7 +29,7 @@ public class MybatisConfiguration {
 		sessionFactory.setDataSource(dataSource);
 
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-		sessionFactory.setMapperLocations(resolver.getResources("classpath*:/com/plateer/mapper/**/*.xml"));
+		sessionFactory.setMapperLocations(resolver.getResources("classpath*:/mapper/**/*.xml"));
 		sessionFactory.setConfigLocation(resolver.getResource("classpath:/config/mybatis-config.xml"));
 		return sessionFactory.getObject();
 	}

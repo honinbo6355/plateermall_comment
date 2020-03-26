@@ -13,6 +13,7 @@ import lombok.ToString;
 @ToString
 public class SumEvaluation {
 
+	private String goodsCode;
 	private int deliveryCommon;
 	private int deliveryBest;
 	private int deliveryWorst;

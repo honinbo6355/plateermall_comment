@@ -1,8 +1,15 @@
 package com.plateer.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
+import com.plateer.domain.CommentStatus;
+
 public interface CommentStatusService {
 
+	List<String> retrieveOrderIdList(String userId);
+	
+	void insertCommentStatus(CommentStatus status);
+	
+	void updateCommentStatus(String orderId);
+	
 }
