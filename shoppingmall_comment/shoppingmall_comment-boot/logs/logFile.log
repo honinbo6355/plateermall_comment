@@ -4980,3 +4980,208 @@ java.lang.NullPointerException: null
 781079 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
 781079 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
 781089 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+861  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 2748 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+864  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+865  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3863 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.56 seconds (JVM running for 5.544)
+3865 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+81454 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+81469 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+81503 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+85609 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+85609 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+85620 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+114945 [http-nio-9999-exec-10] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+114946 [http-nio-9999-exec-10] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1(String)
+114954 [http-nio-9999-exec-10] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 0
+114958 [http-nio-9999-exec-10] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+114958 [http-nio-9999-exec-10] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1(String)
+114967 [http-nio-9999-exec-10] DEBUG c.p.s.m.S.retrieve - <==      Total: 0
+114977 [http-nio-9999-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.plateer.service.logic.CommentServiceImpl.retrieveComment(CommentServiceImpl.java:28)
+	at com.plateer.controller.CommentController.getComment(CommentController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+184369 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+184369 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+184376 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+184376 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+184377 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+184384 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+184384 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+184384 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+184391 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+216840 [http-nio-9999-exec-4] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+216840 [http-nio-9999-exec-4] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+216847 [http-nio-9999-exec-4] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+219758 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+219758 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+219764 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+228894 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+228895 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+228900 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+247404 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+247405 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+247411 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+1028 [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 8924 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+1033 [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1033 [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+5667 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 5.28 seconds (JVM running for 7.59)
+5670 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+98392 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+98416 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+98451 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+102261 [http-nio-9999-exec-2] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+102261 [http-nio-9999-exec-2] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+102270 [http-nio-9999-exec-2] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+170042 [http-nio-9999-exec-4] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+170043 [http-nio-9999-exec-4] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+170050 [http-nio-9999-exec-4] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+269396 [http-nio-9999-exec-6] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+269396 [http-nio-9999-exec-6] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+269405 [http-nio-9999-exec-6] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+271542 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+271543 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+271548 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+478891 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+478892 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+478904 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+618054 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+618054 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+618061 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+618931 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+618932 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+618939 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+743076 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+743077 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+743088 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+746536 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+746537 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+746543 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+747498 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+747498 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+747510 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+796349 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+796349 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+796360 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+790  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 7608 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+792  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+793  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3819 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.504 seconds (JVM running for 5.404)
+3821 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+23891 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+23904 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+23923 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+23930 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+23931 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+23936 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+23940 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+23940 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+23947 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+23947 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+23948 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+23954 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+98074 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+98075 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+98080 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+98081 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+98081 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+98087 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+98088 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+98088 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+98094 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+98095 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+98095 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+98102 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+110466 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+110467 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+110474 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+110475 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+110475 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+110481 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+110482 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+110483 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+110489 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+110490 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+110491 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+110496 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+740  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 1012 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+743  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+744  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3889 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.603 seconds (JVM running for 5.403)
+3891 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+7751 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+7783 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+7808 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+7819 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+7819 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+7823 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+7828 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+7829 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+7835 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+7836 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+7836 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+7841 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+787  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 28200 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+790  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+790  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+4899 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 4.567 seconds (JVM running for 6.655)
+4901 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+6753 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+6784 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+6805 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+6817 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+6817 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+6822 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+6828 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+6828 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+6834 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2

@@ -1,5 +1,6 @@
 package com.plateer.store;
 
+import java.util.HashMap;
 import java.util.List;
 import com.plateer.domain.SubComment;
 
@@ -17,5 +18,5 @@ public interface SubCommentStore {
 
 	List<SubComment> retrieve(String goodsCode);
 
-	List<SubComment> retrieveFilter(String goodsCode, String goodsOption, String orderByOption);
+	List<SubComment> retrieveFilter(HashMap<String, String> filter);
 }

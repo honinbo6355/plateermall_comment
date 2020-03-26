@@ -17,4 +17,6 @@ public interface SubCommentService {
 	List<SubComment> retrieveAll(String userId);
 	
 	List<SubComment> retrieve(String goodsCode);
+	
+	List<SubComment> retrieveFilteredComments(String goodsCode, String goodsOption, String orderByOption);
 }

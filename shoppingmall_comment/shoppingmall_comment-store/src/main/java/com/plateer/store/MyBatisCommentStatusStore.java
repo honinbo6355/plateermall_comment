@@ -2,7 +2,6 @@ package com.plateer.store;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.plateer.domain.CommentStatus;
@@ -11,9 +10,13 @@ import com.plateer.store.mapper.CommentStatusMapper;
 @Repository
 public class MyBatisCommentStatusStore implements CommentStatusStore {
 
-	@Autowired
 	CommentStatusMapper commentStatusMapper;
 
+	public MyBatisCommentStatusStore(CommentStatusMapper commentStatusMapper) {
+
+		this.commentStatusMapper = commentStatusMapper;
+	}
+	
 	@Override
 	public List<String> retrieve(String userId) {
 

@@ -1,5 +1,6 @@
 package com.plateer.store.mapper;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -21,5 +22,5 @@ public interface SubCommentMapper {
 	
 	List<SubComment> retrieve(String goodsCode);
 	
-	List<SubComment> retrieveFilter(String goodsCode, String goodsOption, String orderByOption);
+	List<SubComment> retrieveFilter(HashMap<String, String> filter);
 }

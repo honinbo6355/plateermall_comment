@@ -23,4 +23,35 @@
 	<select id="retrieve" parameterType="String" resultType="com.plateer.domain.SubComment">
 		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode}
 	</select>
+	
+	<select id="retrieveFilter" parameterType="hashmap" resultType="com.plateer.domain.SubComment">
+		SELECT * FROM SubComment WHERE 
+		<trim prefix="(" suffix=")" prefixOverrides="AND">
+			<trim prefix="AND">
+					<if test="goodsOption == '옵션 전체'">
+						goodsOption LIKE '%'
+					</if>
+
+					<if test="goodsOption != '분야 전체'">
+						goodsOption = #{goodsOption}
+					</if>
+			</trim>
+			<trim prefix="AND">		
+				<if test="orderByOption == '전체 보기'">
+					ORDER BY writtenDate DESC
+				</if>
+				<if test="orderByOption != '전체 보기'">
+					<if test="orderByOption == '높은평점순'">
+						ORDER BY starPoint DESC
+					</if>
+					<if test="orderByOption == '낮은평점순'">
+						ORDER BY starPoint ASC
+					</if>
+					<if test="orderByOption == '사진상품평'">
+						
+					</if>
+				</if>
+			</trim>			
+		</trim>
+	</select>
 </mapper>
