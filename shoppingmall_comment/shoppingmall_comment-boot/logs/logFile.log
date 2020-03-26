@@ -1329,3 +1329,14 @@ Consider defining a bean of type 'com.plateer.store.MyBatisSubCommentStore' in y
 2941669 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
 2941669 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
 2941676 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 3
+612  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 8424 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+612  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+612  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+2941 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.696 seconds (JVM running for 3.562)
+2956 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+8315 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+8328 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+8336 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 3
+165092 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+165092 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+165103 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 3
