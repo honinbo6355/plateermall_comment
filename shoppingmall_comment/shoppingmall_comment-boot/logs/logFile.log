@@ -303,6 +303,7 @@ Caused by: org.xml.sax.SAXParseException: 예기치 않은 파일의 끝입니�
 602  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 9096 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
 602  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
 602  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+<<<<<<< HEAD
 2876 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.623 seconds (JVM running for 3.501)
 2885 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
 11582 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.plateer.service.SubCommentService.insertSubComment] with root cause
@@ -1340,3 +1341,17 @@ Consider defining a bean of type 'com.plateer.store.MyBatisSubCommentStore' in y
 165092 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
 165092 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
 165103 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 3
+=======
+3021 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.765 seconds (JVM running for 3.6)
+3023 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+868  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-LA843EK with PID 20780 (C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by NYJ in C:\Users\NYJ\Documents\git\project\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+871  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+871  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3941 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.572 seconds (JVM running for 5.833)
+3943 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+>>>>>>> aa91ecf97d9e6eb6229d8d68659359023be8d3d4
+600  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 9732 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+600  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+600  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+2937 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 2.7 seconds (JVM running for 3.567)
+2948 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO

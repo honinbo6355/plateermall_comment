@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.plateer.domain.SubComment;
 import com.plateer.domain.SumEvaluation;
 import com.plateer.domain.dto.CommentDto;
+import com.plateer.service.SubCommentService;
 import com.plateer.service.logic.SubCommentServiceImpli;
 
 @RestController
@@ -72,7 +73,7 @@ public class CommentController {
 	@PostMapping
 	public void addComment(@RequestBody SubComment comment) {
 		
-		subCommentServiceImpli.insertSubComment(new SubComment("1233", "1203973748", "testId", "사이즈선택:255", "", 1, 30, 2, 2, 2, 5, "발 볼이 생각보다 좁아서 아프네요. 사이즈는 5mm정도 작게 나온 것 같아요.", "2020-03-24"));
+		subCommentServiceImpli.insertSubComment(new SubComment("1233", "1203973748", "testId", "사이즈선택:2", "", 1, 30, 2, 2, 2, 5, "발 볼이 생각보다 좁아서 아프네요. 사이즈는 5mm정도 작게 나온 것 같아요.", "2020-03-24"));
 		//subCommentServiceImpli.insertSubComment(new SubComment("1232", "1203973748", "testId", "사이즈선택:245", "", 1, 30, 2, 2, 2, 5, "테스트입니다", "2020-03-24"));
 		//System.out.println(comment);
 	}
