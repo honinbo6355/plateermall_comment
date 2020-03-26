@@ -13,6 +13,6 @@
     <module>shoppingmall_comment-rest</module>
     <module>shoppingmall_comment-domain</module>
     <module>shoppingmall_comment-service</module>
-    <module>shoppingmall_comment-mapper</module>
+    <module>shoppingmall_comment-store</module>
   </modules>
 </project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.plateer.store.mapper.SubCommentMapper">
+
+    <select id="retrieveAll" parameterType="string" resultType="com.plateer.domain.SubComment">
+        SELECT * FROM SubComment WHERE userId = #{userId}
+    </select>
+    
+    <insert id="insert" parameterType="com.plateer.domain.SubComment">
+    	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, NOW())
+    </insert>
+
+	<update id="modify" parameterType="com.plateer.domain.SubComment">
+		UPDATE SubComment SET starPoint = #{starPoint}, deliveryValue = #{deliveryValue}, designValue = #{designValue}, sizeValue = #{sizeValue}, reviewContent = #{reviewContent} where orderId = #{orderId}
+	</update>
+	
+	<update id="recommend" parameterType="com.plateer.domain.SubComment">
+		UPDATE SubComment SET recommendCount = #{recommendCount} where orderId = #{orderId}
+	</update>
+	
+	<select id="retreive" parameterType="String" resultType="com.plateer.domain.SubComment">
+		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode}
+	</select>
+</mapper>

@@ -9,8 +9,8 @@
 		<artifactId>shoppingmall_comment</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>shoppingmall_comment-mapper</artifactId>
-	<name>shoppingmall_comment-mapper</name>
+	<artifactId>shoppingmall_comment-store</artifactId>
+	<name>shoppingmall_comment-store</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

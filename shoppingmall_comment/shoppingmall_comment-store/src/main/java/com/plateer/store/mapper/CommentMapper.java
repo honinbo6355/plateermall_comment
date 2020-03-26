@@ -8,6 +8,5 @@ import com.plateer.domain.dto.CommentDto;
 public interface CommentMapper {
 
 	CommentDto retrieve(String goodsCode);
-	
-	
+
 }

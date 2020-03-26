@@ -1,4 +1,4 @@
-package com.plateer.service.impl;
+package com.plateer.service.logic;
 
 import com.plateer.service.CommentService;
 

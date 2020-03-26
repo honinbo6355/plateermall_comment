@@ -1,4 +1,4 @@
-package com.plateer.domain.dto;
+package com.plateer.domain;
 
 import lombok.NoArgsConstructor;
 import lombok.ToString;

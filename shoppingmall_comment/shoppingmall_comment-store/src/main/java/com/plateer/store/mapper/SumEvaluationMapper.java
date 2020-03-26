@@ -2,7 +2,7 @@ package com.plateer.store.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.plateer.domain.dto.SumEvaluation;
+import com.plateer.domain.SumEvaluation;
 
 @Mapper
 public interface SumEvaluationMapper {

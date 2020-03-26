@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.plateer.domain.dto.CommentStatus;
+import com.plateer.domain.CommentStatus;
 
 @Mapper
 public interface CommentStatusMapper {

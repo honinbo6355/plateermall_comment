@@ -2,6 +2,9 @@ package com.plateer.domain.dto;
 
 import java.util.List;
 
+import com.plateer.domain.SubComment;
+import com.plateer.domain.SumEvaluation;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
