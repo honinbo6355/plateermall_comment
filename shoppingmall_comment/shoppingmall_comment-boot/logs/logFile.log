@@ -4594,3 +4594,389 @@ java.lang.ClassCastException: com.plateer.domain.CommentStatus cannot be cast to
 837979 [http-nio-9999-exec-10] DEBUG c.p.s.m.SumEvaluationMapper.modify - ==>  Preparing: UPDATE SumEvaluation SET deliveryCommon = ?, deliveryBest = ?, deliveryWorst = ?, designCommon = ?, designBest = ?, designWorst = ?, sizeCommon = ?, sizeBest = ?, sizeWorst = ? where goodsCode = ? 
 837980 [http-nio-9999-exec-10] DEBUG c.p.s.m.SumEvaluationMapper.modify - ==> Parameters: 33(Integer), 33(Integer), 0(Integer), 0(Integer), 33(Integer), 33(Integer), 0(Integer), 33(Integer), 33(Integer), 1203917700(String)
 837988 [http-nio-9999-exec-10] DEBUG c.p.s.m.SumEvaluationMapper.modify - <==    Updates: 1
+630  [main] INFO  c.p.ShoppingmallCommentBootApplication - Starting ShoppingmallCommentBootApplication on DESKTOP-HBU07UD with PID 13932 (C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot\target\classes started by notebiz1029 in C:\Users\notebiz\Documents\git\shoppingmall_comment\shoppingmall_comment\shoppingmall_comment-boot)
+645  [main] DEBUG c.p.ShoppingmallCommentBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+645  [main] INFO  c.p.ShoppingmallCommentBootApplication - The following profiles are active: dev
+3766 [main] INFO  c.p.ShoppingmallCommentBootApplication - Started ShoppingmallCommentBootApplication in 3.494 seconds (JVM running for 4.34)
+3768 [main] INFO  c.p.ShoppingmallCommentBootApplication - HELLO
+11842 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+11873 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+11912 [http-nio-9999-exec-1] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+14902 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+14902 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+14914 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+27548 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.modify - ==>  Preparing: UPDATE SubComment SET starPoint = ?, deliveryValue = ?, designValue = ?, sizeValue = ?, reviewContent = ? where orderId = ? 
+27549 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.modify - ==> Parameters: 4(Integer), 1(Integer), 2(Integer), 3(Integer), 수정 테스트(String), 1231(String)
+27565 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.modify - <==    Updates: 1
+27576 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+27576 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+27587 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+27589 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+27589 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+27603 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+27606 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+27608 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+27618 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+27619 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.modify - ==>  Preparing: UPDATE Comment SET averageStarPoint = ?, customerCount = ? where goodsCode = ? 
+27619 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.modify - ==> Parameters: 1(Integer), 3(Integer), 1203917700(String)
+27624 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.modify - <==    Updates: 1
+27626 [http-nio-9999-exec-4] DEBUG c.p.s.m.SumEvaluationMapper.modify - ==>  Preparing: UPDATE SumEvaluation SET deliveryCommon = ?, deliveryBest = ?, deliveryWorst = ?, designCommon = ?, designBest = ?, designWorst = ?, sizeCommon = ?, sizeBest = ?, sizeWorst = ? where goodsCode = ? 
+27627 [http-nio-9999-exec-4] DEBUG c.p.s.m.SumEvaluationMapper.modify - ==> Parameters: 33(Integer), 33(Integer), 0(Integer), 0(Integer), 66(Integer), 0(Integer), 0(Integer), 33(Integer), 33(Integer), 1203917700(String)
+27633 [http-nio-9999-exec-4] DEBUG c.p.s.m.SumEvaluationMapper.modify - <==    Updates: 1
+33667 [http-nio-9999-exec-5] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+33679 [http-nio-9999-exec-5] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+33685 [http-nio-9999-exec-5] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+33685 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+33685 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+33691 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+33691 [http-nio-9999-exec-5] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+33692 [http-nio-9999-exec-5] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+33697 [http-nio-9999-exec-5] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+34569 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+34569 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+34585 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+34585 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+34585 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+34600 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+34600 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+34600 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+34600 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+35325 [http-nio-9999-exec-7] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+35331 [http-nio-9999-exec-7] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+35333 [http-nio-9999-exec-7] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+35333 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+35333 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+35333 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+35333 [http-nio-9999-exec-7] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+35333 [http-nio-9999-exec-7] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+35349 [http-nio-9999-exec-7] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+56859 [http-nio-9999-exec-9] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+56859 [http-nio-9999-exec-9] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+56866 [http-nio-9999-exec-9] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+60893 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+60896 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+60897 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+60897 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+60897 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+60913 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+60913 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+60913 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+60921 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+61421 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+61422 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+61427 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+61427 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+61427 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+61433 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+61433 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+61434 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+61441 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+78047 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+78062 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+78063 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+78063 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+78063 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+78063 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+78079 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+78079 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+78079 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+151959 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+151960 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973749(String)
+151967 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+151968 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+151968 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973749(String)
+151979 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+151980 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+151980 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973749(String)
+151986 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+159892 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+159892 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+159897 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+159897 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+159897 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+159913 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+159913 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+159914 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+159920 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+161382 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+161382 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+161393 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+161394 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+161395 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+161401 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+161401 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+161401 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+161412 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+169583 [http-nio-9999-exec-3] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+169584 [http-nio-9999-exec-3] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+169590 [http-nio-9999-exec-3] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+171697 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+171697 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+171705 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+172332 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+172333 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+172338 [http-nio-9999-exec-5] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+203057 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+203057 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+203064 [http-nio-9999-exec-7] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+207749 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+207749 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+207758 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+215184 [http-nio-9999-exec-10] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+215185 [http-nio-9999-exec-10] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+215191 [http-nio-9999-exec-10] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+220277 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - ==>  Preparing: SELECT * FROM SubComment WHERE userId = ? 
+220277 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - ==> Parameters: testId(String)
+220285 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieveAll - <==      Total: 4
+302740 [http-nio-9999-exec-3] DEBUG c.p.s.m.C.retrieve - ==>  Preparing: SELECT * FROM CommentStatus where userId = ? and isWritten = 'N' 
+302740 [http-nio-9999-exec-3] DEBUG c.p.s.m.C.retrieve - ==> Parameters: testId(String)
+302746 [http-nio-9999-exec-3] DEBUG c.p.s.m.C.retrieve - <==      Total: 4
+310175 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+310175 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917748(String)
+310179 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 0
+310179 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+310180 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917748(String)
+310188 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - <==      Total: 0
+310197 [http-nio-9999-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.plateer.service.logic.CommentServiceImpl.retrieveComment(CommentServiceImpl.java:28)
+	at com.plateer.controller.CommentController.getComment(CommentController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+339380 [http-nio-9999-exec-5] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+339381 [http-nio-9999-exec-5] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973750(String)
+339386 [http-nio-9999-exec-5] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+339386 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+339387 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973750(String)
+339395 [http-nio-9999-exec-5] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+339395 [http-nio-9999-exec-5] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+339395 [http-nio-9999-exec-5] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973750(String)
+339395 [http-nio-9999-exec-5] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 0
+341819 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+341819 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917701(String)
+341839 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+341839 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+341839 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917701(String)
+341844 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+341844 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+341844 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917701(String)
+341859 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 0
+343701 [http-nio-9999-exec-7] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+343701 [http-nio-9999-exec-7] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+343720 [http-nio-9999-exec-7] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+343720 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+343721 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+343745 [http-nio-9999-exec-7] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+343746 [http-nio-9999-exec-7] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+343746 [http-nio-9999-exec-7] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+343782 [http-nio-9999-exec-7] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+344519 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+344519 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+344525 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+344525 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+344526 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+344532 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+344533 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+344533 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+344544 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+419058 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+419058 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+419068 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+419068 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+419068 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+419084 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+419084 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+419084 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+419084 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+422134 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+422134 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+422152 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+422168 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+422168 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+422183 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+422183 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+422183 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+422183 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+424703 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+424703 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+424718 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+424725 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+424725 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+424725 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+424725 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+424725 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+424740 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+502661 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+502661 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+502672 [http-nio-9999-exec-6] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+502672 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+502672 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+502672 [http-nio-9999-exec-6] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+502672 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+502672 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+502687 [http-nio-9999-exec-6] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+578130 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+578130 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973749(String)
+578136 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+578136 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+578136 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973749(String)
+578153 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+578153 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+578153 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973749(String)
+578158 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+580629 [http-nio-9999-exec-10] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+580630 [http-nio-9999-exec-10] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203917700(String)
+580634 [http-nio-9999-exec-10] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+580634 [http-nio-9999-exec-10] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+580634 [http-nio-9999-exec-10] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203917700(String)
+580664 [http-nio-9999-exec-10] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+580665 [http-nio-9999-exec-10] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+580665 [http-nio-9999-exec-10] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203917700(String)
+580674 [http-nio-9999-exec-10] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 2
+581035 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+581035 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+581049 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+581049 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+581049 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+581070 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+581070 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+581071 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+581081 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+605819 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+605819 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+605832 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+605832 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+605832 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+605838 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+605838 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+605838 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+605845 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+605855 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+605855 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+605860 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+605861 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+605861 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+605867 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+605868 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+605868 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+605882 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+605898 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+605898 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+605904 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+605905 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+605905 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+605910 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+605910 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+605911 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+605919 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+606254 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+606255 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+606281 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+606281 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+606281 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+606287 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+606287 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+606288 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+606294 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+647234 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+647234 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+647241 [http-nio-9999-exec-8] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+647241 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+647241 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+647247 [http-nio-9999-exec-8] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+647248 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+647249 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+647256 [http-nio-9999-exec-8] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+656271 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+656272 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+656290 [http-nio-9999-exec-9] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+656291 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+656291 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+656301 [http-nio-9999-exec-9] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+656302 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+656302 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+656310 [http-nio-9999-exec-9] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+669309 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+669309 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+669321 [http-nio-9999-exec-1] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+669322 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+669323 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+669333 [http-nio-9999-exec-1] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+669334 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+669334 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+669344 [http-nio-9999-exec-1] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+677009 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+677009 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+677030 [http-nio-9999-exec-2] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+677030 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+677030 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+677037 [http-nio-9999-exec-2] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+677038 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+677038 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+677044 [http-nio-9999-exec-2] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+730802 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+730803 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+730822 [http-nio-9999-exec-3] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+730823 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+730823 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+730830 [http-nio-9999-exec-3] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+730830 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+730831 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+730838 [http-nio-9999-exec-3] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
+781064 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==>  Preparing: SELECT * FROM Comment WHERE goodsCode = ? 
+781064 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - ==> Parameters: 1203973748(String)
+781072 [http-nio-9999-exec-4] DEBUG c.p.s.mapper.CommentMapper.retrieve - <==      Total: 1
+781073 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==>  Preparing: SELECT * from SumEvaluation WHERE goodsCode = ? 
+781073 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - ==> Parameters: 1203973748(String)
+781078 [http-nio-9999-exec-4] DEBUG c.p.s.m.S.retrieve - <==      Total: 1
+781079 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==>  Preparing: SELECT * FROM SubComment WHERE goodsCode = ? 
+781079 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - ==> Parameters: 1203973748(String)
+781089 [http-nio-9999-exec-4] DEBUG c.p.s.m.SubCommentMapper.retrieve - <==      Total: 1
