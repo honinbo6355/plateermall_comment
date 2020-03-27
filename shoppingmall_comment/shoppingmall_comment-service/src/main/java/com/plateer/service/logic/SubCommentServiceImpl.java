@@ -194,7 +194,7 @@ public class SubCommentServiceImpl implements SubCommentService {
 		
 		myBatisSubCommentStore.delete(orderId);
 		
-		//삭제하면 별점바꾸는거 꼭 하자!
+		//삭제하면 별점바꾸는거 꼭 하자! 내눈물들이 내게따지듯이 내겐 너를 사랑할 자격도 없다 해.. 우~~` 못난 내사랑아~~~고작 이것밖에 못하겠니?
 //		SumEvaluation sumEvaluation = myBatisSumEvaluationStore.retrieve(comment.getGoodsCode());
 //		CommentDto commentDto = myBatisCommentStore.retrieve(comment.getGoodsCode());
 //
