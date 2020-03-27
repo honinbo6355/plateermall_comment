@@ -10,7 +10,7 @@ public interface SubCommentService {
 	
 	void modifySubComment(SubComment comment);
 	
-	void deleteSubComment();
+	void deleteSubComment(String orderId);
 	
 	void recommendComment(SubComment comment);
 	

@@ -190,8 +190,77 @@ public class SubCommentServiceImpl implements SubCommentService {
 	}
 
 	@Override
-	public void deleteSubComment() {
+	public void deleteSubComment(String orderId) {
+		
+		myBatisSubCommentStore.delete(orderId);
+		
+		//삭제하면 별점바꾸는거 꼭 하자!
+//		SumEvaluation sumEvaluation = myBatisSumEvaluationStore.retrieve(comment.getGoodsCode());
+//		CommentDto commentDto = myBatisCommentStore.retrieve(comment.getGoodsCode());
+//
+//		List<SubComment> commentList = myBatisSubCommentStore.retrieve(comment.getGoodsCode());
+//
+//		int deliveryCommon = 0;
+//		int deliveryBest = 0;
+//		int deliveryWorst = 0;
+//
+//		int designCommon = 0;
+//		int designBest = 0;
+//		int designWorst = 0;
+//
+//		int sizeCommon = 0;
+//		int sizeBest = 0;
+//		int sizeWorst = 0;
+//
+//		int newStarPoint = 0;
+//
+//		for (int i = 0; i < commentList.size(); i++) {
+//
+//			if (commentList.get(i).getDeliveryValue() == 1) {
+//				deliveryCommon++;
+//			} else if (commentList.get(i).getDeliveryValue() == 2) {
+//				deliveryBest++;
+//			} else {
+//				deliveryWorst++;
+//			}
+//
+//			if (commentList.get(i).getDesignValue() == 1) {
+//				designCommon++;
+//			} else if (commentList.get(i).getDesignValue() == 2) {
+//				designBest++;
+//			} else {
+//				designWorst++;
+//			}
+//
+//			if (commentList.get(i).getSizeValue() == 1) {
+//				sizeCommon++;
+//			} else if (commentList.get(i).getSizeValue() == 2) {
+//				sizeBest++;
+//			} else {
+//				sizeWorst++;
+//			}
+//
+//			newStarPoint += commentList.get(i).getStarPoint();
+//		}
+//
+//		sumEvaluation.setDeliveryCommon((deliveryCommon * 100) / commentList.size());
+//		sumEvaluation.setDeliveryBest((deliveryBest * 100) / commentList.size());
+//		sumEvaluation.setDeliveryWorst((deliveryWorst * 100) / commentList.size());
+//
+//		sumEvaluation.setDesignCommon((designCommon * 100) / commentList.size());
+//		sumEvaluation.setDesignBest((designBest * 100) / commentList.size());
+//		sumEvaluation.setDesignWorst((designWorst * 100) / commentList.size());
+//
+//		sumEvaluation.setSizeCommon((sizeCommon * 100) / commentList.size());
+//		sumEvaluation.setSizeBest((sizeBest * 100) / commentList.size());
+//		sumEvaluation.setSizeWorst((sizeWorst * 100) / commentList.size());
+//
+//		commentDto.setAverageStarPoint(newStarPoint / commentDto.getCustomerCount());
+//
+//		myBatisCommentStore.modify(commentDto);
+//		myBatisSumEvaluationStore.modify(sumEvaluation);
 
+		
 	}
 
 	@Override
@@ -222,5 +291,5 @@ public class SubCommentServiceImpl implements SubCommentService {
 
 		return myBatisSubCommentStore.retrieveFilter(filter);
 	}
-
+	
 }

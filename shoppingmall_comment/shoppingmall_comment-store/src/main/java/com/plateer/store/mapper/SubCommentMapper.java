@@ -16,7 +16,7 @@ public interface SubCommentMapper {
 	
 	void modify(SubComment comment);
 	
-	void delete();
+	void delete(String orderId);
 	
 	void recommend(SubComment comment);
 	

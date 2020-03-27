@@ -9,7 +9,7 @@
     </select>
     
     <insert id="insert" parameterType="com.plateer.domain.SubComment">
-    	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, NOW())
+    	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, CURDATE())
     </insert>
 
 	<update id="modify" parameterType="com.plateer.domain.SubComment">
@@ -20,32 +20,36 @@
 		UPDATE SubComment SET recommendCount = #{recommendCount} where orderId = #{orderId}
 	</update>
 	
+	<delete id="delete" parameterType="String">
+		DELETE FROM SubComment WHERE orderId = #{orderId}
+	</delete>
+	
 	<select id="retrieve" parameterType="String" resultType="com.plateer.domain.SubComment">
 		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode}
 	</select>
 	
 	<select id="retrieveFilter" parameterType="hashmap" resultType="com.plateer.domain.SubComment">
 		SELECT * FROM SubComment WHERE 
-		<trim prefix="(" suffix=")" prefixOverrides="AND">
+		<trim prefixOverrides="AND">
 			<trim prefix="AND">
-					<if test="goodsOption == '옵션 전체'">
-						goodsOption LIKE '%'
+					<if test="goodsOption == '옵션보기'">
+						selectedOptions LIKE '%'
 					</if>
 
-					<if test="goodsOption != '분야 전체'">
-						goodsOption = #{goodsOption}
+					<if test="goodsOption != '옵션보기'">
+						selectedOptions = #{goodsOption}
 					</if>
 			</trim>
 			<trim prefix="AND">		
-				<if test="orderByOption == '전체 보기'">
-					ORDER BY writtenDate DESC
+				<if test="orderByOption == '전체보기'">
+					goodsCode = #{goodsCode} ORDER BY writtenDate DESC 
 				</if>
-				<if test="orderByOption != '전체 보기'">
+				<if test="orderByOption != '전체보기'">
 					<if test="orderByOption == '높은평점순'">
-						ORDER BY starPoint DESC
+						goodsCode = #{goodsCode} ORDER BY starPoint DESC 
 					</if>
 					<if test="orderByOption == '낮은평점순'">
-						ORDER BY starPoint ASC
+						goodsCode = #{goodsCode} ORDER BY starPoint ASC 
 					</if>
 					<if test="orderByOption == '사진상품평'">
 						

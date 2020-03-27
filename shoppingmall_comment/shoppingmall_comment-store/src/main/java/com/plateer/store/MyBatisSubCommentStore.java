@@ -37,12 +37,6 @@ public class MyBatisSubCommentStore implements SubCommentStore {
 	}
 
 	@Override
-	public void delete() {
-
-		subCommentMapper.delete();
-	}
-
-	@Override
 	public void recommend(SubComment comment) {
 
 		subCommentMapper.recommend(comment);
@@ -58,6 +52,12 @@ public class MyBatisSubCommentStore implements SubCommentStore {
 	public List<SubComment> retrieveFilter(HashMap<String, String> filter) {
 
 		return subCommentMapper.retrieveFilter(filter);
+	}
+
+	@Override
+	public void delete(String orderId) {
+
+		subCommentMapper.delete(orderId);
 	}
 
 }
