@@ -23,4 +23,6 @@ public interface SubCommentMapper {
 	List<SubComment> retrieve(String goodsCode);
 	
 	List<SubComment> retrieveFilter(HashMap<String, String> filter);
+	
+	String retrieveGoodsCode(String orderId);
 }

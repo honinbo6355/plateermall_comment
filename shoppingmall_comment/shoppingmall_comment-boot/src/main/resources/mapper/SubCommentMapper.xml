@@ -28,6 +28,10 @@
 		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode}
 	</select>
 	
+	<select id="retrieveGoodsCode" parameterType="String" resultType="String">
+		SELECT goodsCode FROM SubComment WHERE orderId = #{orderId}
+	</select>
+	
 	<select id="retrieveFilter" parameterType="hashmap" resultType="com.plateer.domain.SubComment">
 		SELECT * FROM SubComment WHERE 
 		<trim prefixOverrides="AND">

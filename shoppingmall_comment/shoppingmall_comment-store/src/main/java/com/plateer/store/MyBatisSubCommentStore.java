@@ -60,4 +60,10 @@ public class MyBatisSubCommentStore implements SubCommentStore {
 		subCommentMapper.delete(orderId);
 	}
 
+	@Override
+	public String retrieveGoodsCode(String orderId) {
+
+		return subCommentMapper.retrieveGoodsCode(orderId);
+	}
+
 }

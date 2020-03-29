@@ -64,7 +64,6 @@ public class CommentController {
 	@PostMapping
 	public void addComment(@RequestBody SubComment comment) {
 		
-		//System.out.println(comment);
 		subCommentServiceImpl.insertSubComment(comment);
 	}
 	
