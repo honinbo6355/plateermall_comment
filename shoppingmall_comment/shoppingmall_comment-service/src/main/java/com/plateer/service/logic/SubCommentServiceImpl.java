@@ -277,7 +277,7 @@ public class SubCommentServiceImpl implements SubCommentService {
 
 	@Override
 	public List<SubComment> retrieve(String goodsCode) {
-
+		
 		return myBatisSubCommentStore.retrieve(goodsCode);
 	}
 
@@ -289,7 +289,24 @@ public class SubCommentServiceImpl implements SubCommentService {
 		filter.put("goodsOption", goodsOption);
 		filter.put("orderByOption", orderByOption);
 
-		return myBatisSubCommentStore.retrieveFilter(filter);
+		List<SubComment> commentList = myBatisSubCommentStore.retrieveFilter(filter);
+		
+		for(SubComment comment : commentList) {
+			String userId = comment.getUserId();
+			String encodedId = "";
+			
+			for(int i=0; i< 3; i++) {
+				encodedId += userId.charAt(i);
+			}
+			
+			for(int i=4; i<userId.length(); i++) {
+				encodedId += '*';
+			}
+			
+			comment.setUserId(encodedId);
+		}
+		
+		return commentList;
 	}
 	
 }
