@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.plateer.domain.CommentStatus;
 import com.plateer.domain.SubComment;
 import com.plateer.domain.dto.CommentDto;
 import com.plateer.service.logic.CommentServiceImpl;
@@ -93,4 +94,9 @@ public class CommentController {
 		subCommentServiceImpl.deleteSubComment(orderId);
 	}
 
+	@PostMapping("/addcommentstatus")
+	public void addCommentStatus(@RequestBody CommentStatus status) {
+		
+		commentStatusServiceImpl.insertCommentStatus(status);
+	}
 }
