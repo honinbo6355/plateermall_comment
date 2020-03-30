@@ -70,6 +70,7 @@ public class CommentController {
 	@PutMapping
 	public void modifyComment(@RequestBody SubComment comment) {
 		
+		System.out.println(comment);
 		subCommentServiceImpl.modifySubComment(comment);
 	}
 	

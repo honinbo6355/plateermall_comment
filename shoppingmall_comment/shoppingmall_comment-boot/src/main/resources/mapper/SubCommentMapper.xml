@@ -9,11 +9,11 @@
     </select>
     
     <insert id="insert" parameterType="com.plateer.domain.SubComment">
-    	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, CURDATE())
+    	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{myPhoto2}, #{myPhoto3}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, CURDATE())
     </insert>
 
 	<update id="modify" parameterType="com.plateer.domain.SubComment">
-		UPDATE SubComment SET starPoint = #{starPoint}, deliveryValue = #{deliveryValue}, designValue = #{designValue}, sizeValue = #{sizeValue}, reviewContent = #{reviewContent} where orderId = #{orderId}
+		UPDATE SubComment SET starPoint = #{starPoint}, deliveryValue = #{deliveryValue}, designValue = #{designValue}, sizeValue = #{sizeValue}, reviewContent = #{reviewContent}, myPhoto = #{myPhoto}, myPhoto2 = #{myPhoto2}, myPhoto3 = #{myPhoto3} where orderId = #{orderId}
 	</update>
 	
 	<update id="recommend" parameterType="com.plateer.domain.SubComment">
@@ -56,7 +56,7 @@
 						goodsCode = #{goodsCode} ORDER BY starPoint ASC 
 					</if>
 					<if test="orderByOption == '사진상품평'">
-						
+						myPhoto != ''
 					</if>
 				</if>
 			</trim>			

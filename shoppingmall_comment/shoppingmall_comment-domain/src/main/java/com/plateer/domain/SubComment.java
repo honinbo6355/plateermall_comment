@@ -18,6 +18,8 @@ public class SubComment {
 	private String userId;
 	private String selectedOptions;
 	private String myPhoto;
+	private String myPhoto2;
+	private String myPhoto3;
 	private int quantity;
 	private int recommendCount;
 	private int deliveryValue;
