@@ -20,7 +20,7 @@ public class CommentDto {
 
 	private String goodsCode;
 	private String uuid;
-	private int averageStarPoint;
+	private double averageStarPoint;
 	private int customerCount;
 	private SumEvaluation sumEvaluation;
 	private List<SubComment> commentList;

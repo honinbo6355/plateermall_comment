@@ -27,7 +27,7 @@ import com.plateer.service.logic.SubCommentServiceImpl;
 @RequestMapping("/api/comments")
 @CrossOrigin(allowCredentials = "true", origins = {"*"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT},
 allowedHeaders = {"Content-Type", "X-Requested-With", "accept", "Origin", "Access-Control-Request-Method",
-        "Access-Control-Request-Headers", "Access-Control-Allow-Origin", "Set-Cookie"},
+        "Access-Control-Request-Headers", "Access-Control-Allow-Origin", "Set-Cookie", "Authorization"},
 exposedHeaders = {"Access-Control-Allow-Origin", "Access-Control-Allow-Credentials"}, maxAge = 3000)
 public class CommentController {
 	

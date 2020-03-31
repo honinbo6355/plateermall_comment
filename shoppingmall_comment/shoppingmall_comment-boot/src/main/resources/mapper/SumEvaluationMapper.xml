@@ -9,7 +9,7 @@
 	</select>
 	
 	<update id="modify" parameterType="com.plateer.domain.SumEvaluation">
-		UPDATE SumEvaluation SET deliveryCommon = #{deliveryCommon}, deliveryBest = #{deliveryCommon},
+		UPDATE SumEvaluation SET deliveryCommon = #{deliveryCommon}, deliveryBest = #{deliveryBest},
 		deliveryWorst = #{deliveryWorst}, designCommon = #{designCommon}, designBest = #{designBest}, designWorst = #{designWorst},
 		sizeCommon = #{sizeCommon}, sizeBest = #{sizeBest}, sizeWorst = #{sizeWorst} where goodsCode = #{goodsCode}
 	</update>

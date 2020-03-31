@@ -187,7 +187,7 @@ public class SubCommentServiceImpl implements SubCommentService {
 			sumEvaluation.setSizeWorst((sizeWorst * 100) / commentList.size());
 
 			commentDto.setCustomerCount(commentList.size());
-			commentDto.setAverageStarPoint(newStarPoint / commentDto.getCustomerCount());
+			commentDto.setAverageStarPoint(Math.round((newStarPoint / commentDto.getCustomerCount())*100)/100);
 
 		}else {
 			sumEvaluation.setDeliveryBest(0);
