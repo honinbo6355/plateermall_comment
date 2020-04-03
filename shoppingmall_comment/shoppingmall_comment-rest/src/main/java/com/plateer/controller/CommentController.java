@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.CommentStatus;
 import com.plateer.domain.SubComment;
 import com.plateer.domain.dto.CommentDto;
@@ -98,5 +99,24 @@ public class CommentController {
 	public void addCommentStatus(@RequestBody CommentStatus status) {
 		
 		commentStatusServiceImpl.insertCommentStatus(status);
+	}
+	
+	@GetMapping("/isrecommend/{orderId}/{email}")
+	public Boolean isRecommend(@PathVariable("orderId") String orderId, @PathVariable("email") String email) {
+		
+		CommentRecommend recommend = new CommentRecommend(orderId, email);
+		return subCommentServiceImpl.retrieveRecommend(recommend);
+	}
+	
+	@PostMapping("/addrecommend")
+	public void addRecommend(@RequestBody CommentRecommend commentRecommend) {
+		
+		subCommentServiceImpl.insertRecommend(commentRecommend);
+	}
+	
+	@GetMapping("/getphotolist/{goodsCode}")
+	public List<SubComment> getPhotoList(@PathVariable("goodsCode") String goodsCode){
+		
+		return null;
 	}
 }

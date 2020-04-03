@@ -5,7 +5,7 @@
 <mapper namespace="com.plateer.store.mapper.CommentStatusMapper">
 
 	<select id="retrieve" parameterType="String" resultType="String">
-		SELECT * FROM CommentStatus where userId = #{userId} and isWritten = 'N'
+		SELECT * FROM CommentStatus where userId = #{userId} and isWritten = 'N' ORDER BY orderId DESC
 	</select>
 	
 	<insert id="insert" parameterType="com.plateer.domain.CommentStatus">

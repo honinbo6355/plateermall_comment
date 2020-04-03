@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.SubComment;
 import com.plateer.domain.SumEvaluation;
 import com.plateer.domain.dto.CommentDto;
@@ -147,25 +148,25 @@ public class SubCommentServiceImpl implements SubCommentService {
 		if(commentList.size() != 0) {
 			for (int i = 0; i < commentList.size(); i++) {
 
-				if (commentList.get(i).getDeliveryValue() == 1) {
+				if (commentList.get(i).getDeliveryValue().equals("1")) {
 					deliveryCommon++;
-				} else if (commentList.get(i).getDeliveryValue() == 2) {
+				} else if (commentList.get(i).getDeliveryValue().equals("2")) {
 					deliveryBest++;
 				} else {
 					deliveryWorst++;
 				}
 
-				if (commentList.get(i).getDesignValue() == 1) {
+				if (commentList.get(i).getDesignValue().equals("1")) {
 					designCommon++;
-				} else if (commentList.get(i).getDesignValue() == 2) {
+				} else if (commentList.get(i).getDesignValue().equals("2")) {
 					designBest++;
 				} else {
 					designWorst++;
 				}
 
-				if (commentList.get(i).getSizeValue() == 1) {
+				if (commentList.get(i).getSizeValue().equals("1")) {
 					sizeCommon++;
-				} else if (commentList.get(i).getSizeValue() == 2) {
+				} else if (commentList.get(i).getSizeValue().equals("2")) {
 					sizeBest++;
 				} else {
 					sizeWorst++;
@@ -206,5 +207,20 @@ public class SubCommentServiceImpl implements SubCommentService {
 
 		myBatisCommentStore.modify(commentDto);
 		myBatisSumEvaluationStore.modify(sumEvaluation);
+	}
+
+	@Override
+	public Boolean retrieveRecommend(CommentRecommend commentRecommend) {
+
+		CommentRecommend recommend = myBatisSubCommentStore.retrieveRecommend(commentRecommend);
+		
+		if(recommend == null) return true;
+		else return false;
+	}
+
+	@Override
+	public void insertRecommend(CommentRecommend commentRecommend) {
+		
+		myBatisSubCommentStore.insertRecommend(commentRecommend);
 	}
 }

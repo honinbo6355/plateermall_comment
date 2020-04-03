@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.SubComment;
 import com.plateer.store.mapper.SubCommentMapper;
 
@@ -64,6 +65,18 @@ public class MyBatisSubCommentStore implements SubCommentStore {
 	public String retrieveGoodsCode(String orderId) {
 
 		return subCommentMapper.retrieveGoodsCode(orderId);
+	}
+
+	@Override
+	public CommentRecommend retrieveRecommend(CommentRecommend commentRecommend) {
+
+		return subCommentMapper.retrieveRecommend(commentRecommend);
+	}
+
+	@Override
+	public void insertRecommend(CommentRecommend commentRecommend) {
+		
+		subCommentMapper.insertRecommend(commentRecommend);
 	}
 
 }

@@ -22,9 +22,9 @@ public class SubComment {
 	private String myPhoto3;
 	private int quantity;
 	private int recommendCount;
-	private int deliveryValue;
-	private int designValue;
-	private int sizeValue;
+	private String deliveryValue;
+	private String designValue;
+	private String sizeValue;
 	private int starPoint;
 	private String reviewContent;
 	private String writtenDate;

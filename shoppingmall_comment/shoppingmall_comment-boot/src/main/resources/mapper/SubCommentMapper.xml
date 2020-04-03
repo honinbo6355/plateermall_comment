@@ -5,12 +5,16 @@
 <mapper namespace="com.plateer.store.mapper.SubCommentMapper">
 
     <select id="retrieveAll" parameterType="string" resultType="com.plateer.domain.SubComment">
-        SELECT * FROM SubComment WHERE userId = #{userId}
+        SELECT * FROM SubComment WHERE userId = #{userId} order by writtenDate DESC
     </select>
     
     <insert id="insert" parameterType="com.plateer.domain.SubComment">
     	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{myPhoto2}, #{myPhoto3}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, CURDATE())
     </insert>
+
+	<select id="retrievePhoto" parameterType="String">
+		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode} AND myPhoto != ''
+	</select>
 
 	<update id="modify" parameterType="com.plateer.domain.SubComment">
 		UPDATE SubComment SET starPoint = #{starPoint}, deliveryValue = #{deliveryValue}, designValue = #{designValue}, sizeValue = #{sizeValue}, reviewContent = #{reviewContent}, myPhoto = #{myPhoto}, myPhoto2 = #{myPhoto2}, myPhoto3 = #{myPhoto3} where orderId = #{orderId}
@@ -20,12 +24,20 @@
 		UPDATE SubComment SET recommendCount = #{recommendCount} where orderId = #{orderId}
 	</update>
 	
+	<insert id="insertRecommend" parameterType="com.plateer.domain.CommentRecommend">
+    	INSERT INTO CommentRecommend VALUES (#{orderId}, #{email})
+    </insert>
+	
+	<select id="retrieveRecommend" parameterType="com.plateer.domain.CommentRecommend" resultType="com.plateer.domain.CommentRecommend">
+		SELECT * FROM CommentRecommend WHERE orderId = #{orderId} AND email= #{email}
+	</select>
+	
 	<delete id="delete" parameterType="String">
 		DELETE FROM SubComment WHERE orderId = #{orderId}
 	</delete>
 	
 	<select id="retrieve" parameterType="String" resultType="com.plateer.domain.SubComment">
-		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode}
+		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode} order by writtenDate DESC
 	</select>
 	
 	<select id="retrieveGoodsCode" parameterType="String" resultType="String">

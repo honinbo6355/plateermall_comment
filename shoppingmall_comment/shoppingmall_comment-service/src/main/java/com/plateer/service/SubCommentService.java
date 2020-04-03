@@ -2,6 +2,7 @@ package com.plateer.service;
 
 import java.util.List;
 
+import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.SubComment;
 
 public interface SubCommentService {
@@ -19,4 +20,8 @@ public interface SubCommentService {
 	List<SubComment> retrieve(String goodsCode);
 	
 	List<SubComment> retrieveFilteredComments(String goodsCode, String goodsOption, String orderByOption);
+	
+	Boolean retrieveRecommend(CommentRecommend commentRecommend);
+	
+	void insertRecommend(CommentRecommend commentRecommend);
 }

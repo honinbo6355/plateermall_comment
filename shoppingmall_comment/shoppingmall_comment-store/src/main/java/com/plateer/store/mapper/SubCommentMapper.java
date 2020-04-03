@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.SubComment;
 
 @Mapper
@@ -25,4 +26,8 @@ public interface SubCommentMapper {
 	List<SubComment> retrieveFilter(HashMap<String, String> filter);
 	
 	String retrieveGoodsCode(String orderId);
+	
+	CommentRecommend retrieveRecommend(CommentRecommend commentRecommend);
+	
+	void insertRecommend(CommentRecommend commentRecommend);
 }
