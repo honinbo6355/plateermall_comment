@@ -19,6 +19,8 @@ public interface SubCommentService {
 	
 	List<SubComment> retrieve(String goodsCode);
 	
+	List<SubComment> retrievePhoto(String goodsCode);
+	
 	List<SubComment> retrieveFilteredComments(String goodsCode, String goodsOption, String orderByOption);
 	
 	Boolean retrieveRecommend(CommentRecommend commentRecommend);

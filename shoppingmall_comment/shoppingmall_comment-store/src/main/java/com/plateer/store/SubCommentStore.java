@@ -19,7 +19,9 @@ public interface SubCommentStore {
 	void recommend(SubComment comment);
 
 	List<SubComment> retrieve(String goodsCode);
-
+	
+	List<SubComment> retrievePhoto(String goodsCode);
+ 
 	List<SubComment> retrieveFilter(HashMap<String, String> filter);
 	
 	String retrieveGoodsCode(String orderId);

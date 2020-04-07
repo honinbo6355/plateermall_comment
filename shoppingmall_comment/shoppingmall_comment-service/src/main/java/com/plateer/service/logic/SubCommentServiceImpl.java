@@ -223,4 +223,10 @@ public class SubCommentServiceImpl implements SubCommentService {
 		
 		myBatisSubCommentStore.insertRecommend(commentRecommend);
 	}
+
+	@Override
+	public List<SubComment> retrievePhoto(String goodsCode) {
+
+		return myBatisSubCommentStore.retrievePhoto(goodsCode);
+	}
 }

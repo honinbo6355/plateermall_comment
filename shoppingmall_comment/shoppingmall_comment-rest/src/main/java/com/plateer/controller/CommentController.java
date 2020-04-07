@@ -117,6 +117,6 @@ public class CommentController {
 	@GetMapping("/getphotolist/{goodsCode}")
 	public List<SubComment> getPhotoList(@PathVariable("goodsCode") String goodsCode){
 		
-		return null;
+		return subCommentServiceImpl.retrievePhoto(goodsCode);
 	}
 }

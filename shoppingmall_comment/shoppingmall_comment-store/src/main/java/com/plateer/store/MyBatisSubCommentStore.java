@@ -79,4 +79,10 @@ public class MyBatisSubCommentStore implements SubCommentStore {
 		subCommentMapper.insertRecommend(commentRecommend);
 	}
 
+	@Override
+	public List<SubComment> retrievePhoto(String goodsCode) {
+		
+		return subCommentMapper.retrievePhoto(goodsCode);
+	}
+
 }

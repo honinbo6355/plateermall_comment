@@ -12,7 +12,7 @@
     	INSERT INTO SubComment VALUES (#{orderId}, #{goodsCode}, #{userId}, #{selectedOptions}, #{myPhoto}, #{myPhoto2}, #{myPhoto3}, #{quantity}, 0, #{deliveryValue}, #{designValue}, #{sizeValue}, #{starPoint}, #{reviewContent}, CURDATE())
     </insert>
 
-	<select id="retrievePhoto" parameterType="String">
+	<select id="retrievePhoto" parameterType="String" resultType="com.plateer.domain.SubComment">
 		SELECT * FROM SubComment WHERE goodsCode = #{goodsCode} AND myPhoto != ''
 	</select>
 

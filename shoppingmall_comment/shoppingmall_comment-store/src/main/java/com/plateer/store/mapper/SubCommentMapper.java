@@ -23,6 +23,8 @@ public interface SubCommentMapper {
 	
 	List<SubComment> retrieve(String goodsCode);
 	
+	List<SubComment> retrievePhoto(String goodsCode);
+	
 	List<SubComment> retrieveFilter(HashMap<String, String> filter);
 	
 	String retrieveGoodsCode(String orderId);
@@ -30,4 +32,6 @@ public interface SubCommentMapper {
 	CommentRecommend retrieveRecommend(CommentRecommend commentRecommend);
 	
 	void insertRecommend(CommentRecommend commentRecommend);
+	
+
 }

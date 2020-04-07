@@ -17,7 +17,6 @@ public class MyBatisSumEvaluationStore implements SumEvaluationStore {
 	
 	@Override
 	public SumEvaluation retrieve(String goodsCode) {
-		System.out.println("mapper");
 		
 		return sumEvaluationMapper.retrieve(goodsCode);
 	}
