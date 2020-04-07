@@ -1,38 +1,43 @@
 Manifest-Version: 1.0
 Built-By: notebiz1029
-Class-Path: lib/junit-4.12.jar lib/hamcrest-core-1.3.jar lib/spring-bo
- ot-starter-web-2.2.5.RELEASE.jar lib/spring-boot-starter-2.2.5.RELEAS
- E.jar lib/spring-boot-2.2.5.RELEASE.jar lib/spring-boot-autoconfigure
- -2.2.5.RELEASE.jar lib/spring-boot-starter-logging-2.2.5.RELEASE.jar 
- lib/log4j-to-slf4j-2.12.1.jar lib/log4j-api-2.12.1.jar lib/jul-to-slf
- 4j-1.7.30.jar lib/jakarta.annotation-api-1.3.5.jar lib/spring-core-5.
- 2.4.RELEASE.jar lib/spring-jcl-5.2.4.RELEASE.jar lib/snakeyaml-1.25.j
- ar lib/spring-boot-starter-json-2.2.5.RELEASE.jar lib/jackson-datatyp
- e-jdk8-2.10.2.jar lib/jackson-datatype-jsr310-2.10.2.jar lib/jackson-
- module-parameter-names-2.10.2.jar lib/spring-boot-starter-tomcat-2.2.
- 5.RELEASE.jar lib/tomcat-embed-core-9.0.31.jar lib/tomcat-embed-el-9.
- 0.31.jar lib/tomcat-embed-websocket-9.0.31.jar lib/spring-boot-starte
- r-validation-2.2.5.RELEASE.jar lib/jakarta.validation-api-2.0.2.jar l
- ib/hibernate-validator-6.0.18.Final.jar lib/jboss-logging-3.3.2.Final
- .jar lib/spring-web-5.2.4.RELEASE.jar lib/spring-beans-5.2.4.RELEASE.
- jar lib/spring-webmvc-5.2.4.RELEASE.jar lib/spring-aop-5.2.4.RELEASE.
- jar lib/spring-context-5.2.4.RELEASE.jar lib/spring-expression-5.2.4.
- RELEASE.jar lib/slf4j-api-1.7.30.jar lib/logback-classic-1.2.3.jar li
- b/logback-core-1.2.3.jar lib/jackson-databind-2.10.2.jar lib/jackson-
- annotations-2.10.2.jar lib/jackson-core-2.10.2.jar lib/spring-boot-st
- arter-jdbc-2.2.5.RELEASE.jar lib/HikariCP-3.4.2.jar lib/spring-jdbc-5
- .2.4.RELEASE.jar lib/spring-tx-5.2.4.RELEASE.jar lib/mariadb-java-cli
- ent-2.6.0.jar lib/mybatis-3.5.4.jar lib/mybatis-spring-2.0.3.jar lib/
- springfox-swagger2-2.9.2.jar lib/swagger-annotations-1.5.20.jar lib/s
- wagger-models-1.5.20.jar lib/springfox-spi-2.9.2.jar lib/springfox-co
- re-2.9.2.jar lib/byte-buddy-1.8.12.jar lib/springfox-schema-2.9.2.jar
-  lib/springfox-swagger-common-2.9.2.jar lib/springfox-spring-web-2.9.
- 2.jar lib/guava-20.0.jar lib/classmate-1.4.0.jar lib/spring-plugin-co
- re-1.2.0.RELEASE.jar lib/spring-plugin-metadata-1.2.0.RELEASE.jar lib
- /mapstruct-1.2.0.Final.jar lib/springfox-swagger-ui-2.9.2.jar lib/sho
- ppingmall_comment-rest-0.0.1-SNAPSHOT.jar lib/shoppingmall_comment-do
- main-0.0.1-SNAPSHOT.jar lib/shoppingmall_comment-service-0.0.1-SNAPSH
- OT.jar lib/shoppingmall_comment-store-0.0.1-SNAPSHOT.jar
+Class-Path: lib/aws-java-sdk-s3-1.11.759.jar lib/aws-java-sdk-kms-1.11
+ .759.jar lib/aws-java-sdk-core-1.11.759.jar lib/commons-logging-1.1.3
+ .jar lib/httpclient-4.5.9.jar lib/httpcore-4.4.11.jar lib/commons-cod
+ ec-1.11.jar lib/ion-java-1.0.2.jar lib/jackson-dataformat-cbor-2.6.7.
+ jar lib/joda-time-2.8.1.jar lib/jmespath-java-1.11.759.jar lib/junit-
+ 4.12.jar lib/hamcrest-core-1.3.jar lib/spring-boot-starter-web-2.2.5.
+ RELEASE.jar lib/spring-boot-starter-2.2.5.RELEASE.jar lib/spring-boot
+ -2.2.5.RELEASE.jar lib/spring-boot-autoconfigure-2.2.5.RELEASE.jar li
+ b/spring-boot-starter-logging-2.2.5.RELEASE.jar lib/log4j-to-slf4j-2.
+ 12.1.jar lib/log4j-api-2.12.1.jar lib/jul-to-slf4j-1.7.30.jar lib/jak
+ arta.annotation-api-1.3.5.jar lib/spring-core-5.2.4.RELEASE.jar lib/s
+ pring-jcl-5.2.4.RELEASE.jar lib/snakeyaml-1.25.jar lib/spring-boot-st
+ arter-json-2.2.5.RELEASE.jar lib/jackson-datatype-jdk8-2.10.2.jar lib
+ /jackson-datatype-jsr310-2.10.2.jar lib/jackson-module-parameter-name
+ s-2.10.2.jar lib/spring-boot-starter-tomcat-2.2.5.RELEASE.jar lib/tom
+ cat-embed-core-9.0.31.jar lib/tomcat-embed-el-9.0.31.jar lib/tomcat-e
+ mbed-websocket-9.0.31.jar lib/spring-boot-starter-validation-2.2.5.RE
+ LEASE.jar lib/jakarta.validation-api-2.0.2.jar lib/hibernate-validato
+ r-6.0.18.Final.jar lib/jboss-logging-3.3.2.Final.jar lib/spring-web-5
+ .2.4.RELEASE.jar lib/spring-beans-5.2.4.RELEASE.jar lib/spring-webmvc
+ -5.2.4.RELEASE.jar lib/spring-aop-5.2.4.RELEASE.jar lib/spring-contex
+ t-5.2.4.RELEASE.jar lib/spring-expression-5.2.4.RELEASE.jar lib/slf4j
+ -api-1.7.30.jar lib/logback-classic-1.2.3.jar lib/logback-core-1.2.3.
+ jar lib/jackson-databind-2.10.2.jar lib/jackson-annotations-2.10.2.ja
+ r lib/jackson-core-2.10.2.jar lib/spring-boot-starter-jdbc-2.2.5.RELE
+ ASE.jar lib/HikariCP-3.4.2.jar lib/spring-jdbc-5.2.4.RELEASE.jar lib/
+ spring-tx-5.2.4.RELEASE.jar lib/mariadb-java-client-2.6.0.jar lib/myb
+ atis-3.5.4.jar lib/mybatis-spring-2.0.3.jar lib/springfox-swagger2-2.
+ 9.2.jar lib/swagger-annotations-1.5.20.jar lib/swagger-models-1.5.20.
+ jar lib/springfox-spi-2.9.2.jar lib/springfox-core-2.9.2.jar lib/byte
+ -buddy-1.8.12.jar lib/springfox-schema-2.9.2.jar lib/springfox-swagge
+ r-common-2.9.2.jar lib/springfox-spring-web-2.9.2.jar lib/guava-20.0.
+ jar lib/classmate-1.4.0.jar lib/spring-plugin-core-1.2.0.RELEASE.jar 
+ lib/spring-plugin-metadata-1.2.0.RELEASE.jar lib/mapstruct-1.2.0.Fina
+ l.jar lib/springfox-swagger-ui-2.9.2.jar lib/shoppingmall_comment-res
+ t-0.0.1-SNAPSHOT.jar lib/shoppingmall_comment-domain-0.0.1-SNAPSHOT.j
+ ar lib/shoppingmall_comment-service-0.0.1-SNAPSHOT.jar lib/shoppingma
+ ll_comment-store-0.0.1-SNAPSHOT.jar
 Build-Jdk: 1.8.0_242
 Created-By: Maven Integration for Eclipse
 Main-Class: com.plateer.ShoppingGoodsBootApplication

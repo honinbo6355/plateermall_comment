@@ -1,7 +1,7 @@
 package com.plateer.controller;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.CommentStatus;
@@ -32,14 +35,17 @@ allowedHeaders = {"Content-Type", "X-Requested-With", "accept", "Origin", "Acces
 exposedHeaders = {"Access-Control-Allow-Origin", "Access-Control-Allow-Credentials"}, maxAge = 3000)
 public class CommentController {
 	
+	private S3Client s3Client;
+	
 	CommentServiceImpl commentServiceImpl;
 	
 	SubCommentServiceImpl subCommentServiceImpl;
 	
 	CommentStatusServiceImpl commentStatusServiceImpl;
 	
-	public CommentController(CommentServiceImpl commentServiceImpl, SubCommentServiceImpl subCommentServiceImpl, CommentStatusServiceImpl commentStatusServiceImpl) {
+	public CommentController(S3Client s3Client, CommentServiceImpl commentServiceImpl, SubCommentServiceImpl subCommentServiceImpl, CommentStatusServiceImpl commentStatusServiceImpl) {
 	
+		this.s3Client = s3Client;
 		this.commentServiceImpl = commentServiceImpl;
 		this.subCommentServiceImpl = subCommentServiceImpl;
 		this.commentStatusServiceImpl = commentStatusServiceImpl;
@@ -118,5 +124,31 @@ public class CommentController {
 	public List<SubComment> getPhotoList(@PathVariable("goodsCode") String goodsCode){
 		
 		return subCommentServiceImpl.retrievePhoto(goodsCode);
+	}
+	
+	@PostMapping("/upload")
+	public String uploadTest() {
+		
+		File file = new File("D:\\brave.png");
+		
+		s3Client.fileUpload("brave.png", file);
+		
+		return "success";
+	}
+	
+	@CrossOrigin(origins = "*")
+	@RequestMapping(value = "/uploadfile", method = RequestMethod.POST)
+	public List<String> uploadFiles(@RequestParam List<MultipartFile> files) throws Exception{
+		
+		List<String> list = new ArrayList<String>();
+		
+		for (MultipartFile file : files) {
+			String originalfileName = file.getOriginalFilename();
+			File dest = new File("D:\\images\\" + originalfileName);
+
+			file.transferTo(dest);
+		}
+		
+		return list;
 	}
 }
