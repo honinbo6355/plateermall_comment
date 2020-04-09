@@ -22,3 +22,5 @@ spring:
     password: newbie!
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mysql://218.38.15.94:3306/NEWBIE
+  servlet:    multipart:      max-file-size: 10MB
+      max-request-size: 10MB        

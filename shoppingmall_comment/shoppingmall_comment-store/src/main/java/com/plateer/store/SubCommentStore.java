@@ -29,4 +29,6 @@ public interface SubCommentStore {
 	CommentRecommend retrieveRecommend(CommentRecommend commentRecommend);
 	
 	void insertRecommend(CommentRecommend commentRecommend);
+	
+	SubComment retreiveSubComment(String orderId);
 }

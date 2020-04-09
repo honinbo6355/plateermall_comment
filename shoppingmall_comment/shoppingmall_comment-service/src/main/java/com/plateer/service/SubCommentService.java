@@ -1,6 +1,7 @@
 package com.plateer.service;
 
 import java.util.List;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.plateer.domain.CommentRecommend;
 import com.plateer.domain.SubComment;
@@ -26,4 +27,6 @@ public interface SubCommentService {
 	Boolean retrieveRecommend(CommentRecommend commentRecommend);
 	
 	void insertRecommend(CommentRecommend commentRecommend);
+	
+	List<String> uploadFile(List<MultipartFile> files);
 }

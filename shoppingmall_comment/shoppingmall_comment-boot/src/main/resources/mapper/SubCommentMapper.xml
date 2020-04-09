@@ -32,6 +32,10 @@
 		SELECT * FROM CommentRecommend WHERE orderId = #{orderId} AND email= #{email}
 	</select>
 	
+	<select id="retreiveSubComment" parameterType="String" resultType="com.plateer.domain.SubComment">
+		SELECT * FROM SubComment WHERE orderId = #{orderId}
+	</select>
+	
 	<delete id="delete" parameterType="String">
 		DELETE FROM SubComment WHERE orderId = #{orderId}
 	</delete>

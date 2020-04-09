@@ -1,4 +1,4 @@
-package com.plateer.controller;
+package com.plateer.service.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

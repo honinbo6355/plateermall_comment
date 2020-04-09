@@ -33,5 +33,5 @@ public interface SubCommentMapper {
 	
 	void insertRecommend(CommentRecommend commentRecommend);
 	
-
+	SubComment retreiveSubComment(String orderId);
 }

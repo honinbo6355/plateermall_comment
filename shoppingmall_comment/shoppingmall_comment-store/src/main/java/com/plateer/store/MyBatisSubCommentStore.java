@@ -85,4 +85,10 @@ public class MyBatisSubCommentStore implements SubCommentStore {
 		return subCommentMapper.retrievePhoto(goodsCode);
 	}
 
+	@Override
+	public SubComment retreiveSubComment(String orderId) {
+
+		return subCommentMapper.retreiveSubComment(orderId);
+	}
+
 }
