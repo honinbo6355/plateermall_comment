@@ -12,4 +12,5 @@ public interface CommentStatusService {
 	
 	void updateCommentStatus(String orderId);
 	
+	void deleteCommentStatus(String orderId);
 }

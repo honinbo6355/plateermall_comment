@@ -74,7 +74,6 @@ public class CommentController {
 	@PutMapping
 	public void modifyComment(@RequestBody SubComment comment) {
 		
-		System.out.println(comment);
 		subCommentServiceImpl.modifySubComment(comment);
 	}
 	
@@ -97,10 +96,16 @@ public class CommentController {
 		subCommentServiceImpl.deleteSubComment(orderId);
 	}
 
-	@PostMapping("/addcommentstatus")
+	@PostMapping("addcommentstatus")
 	public void addCommentStatus(@RequestBody CommentStatus status) {
 		
 		commentStatusServiceImpl.insertCommentStatus(status);
+	}
+	
+	@DeleteMapping("/deletecommentstatus/{orderId}")
+	public void deleteStatus(@PathVariable("orderId") String orderId) {
+		
+		commentStatusServiceImpl.deleteCommentStatus(orderId);
 	}
 	
 	@GetMapping("/isrecommend/{orderId}/{email}")

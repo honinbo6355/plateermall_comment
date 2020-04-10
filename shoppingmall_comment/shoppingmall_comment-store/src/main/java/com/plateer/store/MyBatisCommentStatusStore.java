@@ -34,6 +34,12 @@ public class MyBatisCommentStatusStore implements CommentStatusStore {
 		
 		commentStatusMapper.modify(orderId);
 	}
+
+	@Override
+	public void delete(String orderId) {
+		
+		commentStatusMapper.delete(orderId);
+	}
 	
 	
 }

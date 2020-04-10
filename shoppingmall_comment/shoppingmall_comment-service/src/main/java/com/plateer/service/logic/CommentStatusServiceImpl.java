@@ -33,4 +33,12 @@ public class CommentStatusServiceImpl implements CommentStatusService {
 		myBatisCommentStatusStore.modify(orderId);
 	}
 
+	@Override
+	public void deleteCommentStatus(String orderId) {
+		
+		myBatisCommentStatusStore.delete(orderId);
+	}
+	
+	
+
 }

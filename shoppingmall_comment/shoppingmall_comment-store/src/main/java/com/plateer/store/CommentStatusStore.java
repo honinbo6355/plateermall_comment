@@ -11,4 +11,6 @@ public interface CommentStatusStore {
 	void insert(CommentStatus status);
 
 	void modify(String orderId);
+	
+	void delete(String orderId);
 }

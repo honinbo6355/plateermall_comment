@@ -16,4 +16,7 @@
 		UPDATE CommentStatus SET isWritten = 'Y' where orderId = #{orderId}
 	</update>
 	
+	<delete id="delete" parameterType="String">
+		DELETE FROM CommentStatus where orderId = #{orderId}
+	</delete>
 </mapper>

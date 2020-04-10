@@ -225,7 +225,6 @@ public class SubCommentServiceImpl implements SubCommentService {
 	public Boolean retrieveRecommend(CommentRecommend commentRecommend) {
 
 		CommentRecommend recommend = myBatisSubCommentStore.retrieveRecommend(commentRecommend);
-
 		if (recommend == null)
 			return true;
 		else

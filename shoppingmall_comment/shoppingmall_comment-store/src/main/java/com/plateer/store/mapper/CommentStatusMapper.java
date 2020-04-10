@@ -14,4 +14,6 @@ public interface CommentStatusMapper {
 	void insert(CommentStatus status);
 	
 	void modify(String orderId);
+	
+	void delete(String orderId);
 }
