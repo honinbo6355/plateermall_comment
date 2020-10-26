@@ -3,6 +3,11 @@
 
 <br />
 
+## swagger url
+https://shoppingmall-comment.herokuapp.com
+
+<br />
+
 ## class diagram
 ![class diagram](classdiagram.PNG)
 
